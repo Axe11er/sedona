@@ -1,0 +1,118 @@
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/vtwNVMP8y9C17vLvIBNZI_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v8/ATKpv8nLYAKUYexo8iqqrg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/g46X4VH_KHOWAAa-HpnGPiEAvth_LlrfE80CYdSH47w.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 900px;
+}
+
+.main-header-top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+/*  margin-bottom: 35px;*/
+  background: url("../img/logo-mini.png") no-repeat 50% 0;
+/*  min-height: 200px;*/
+}
+
+.logo-mini {
+  position: absolute;
+  top: 0;
+
+}
+
+.main-header-middle {
+  width: 100%;
+  min-height: 570px;
+  background: url("../img/Welcome.png") no-repeat 50% 35%, url("../img/main-header-bg-transparent.png") no-repeat;
+}
+
+.wrapper {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.main-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.main-header nav a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin: 0 55px;
+  padding: 20px 15px;
+  flex-basis: 130px;
+  text-align: center;
+}
+
+.main-header nav a:nth-child(2) {
+  margin-right: 260px;
+}
+
+.main-header nav a:nth-child(3) {
+}
+
+.promo-text p {
+  font-weight: bold;
+  font-size: 21px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
